@@ -1,0 +1,32 @@
+# Develop AI Agents on Azure
+
+Hands-on labs from Microsoft's **Develop AI Agents on Azure** learning path, built
+using Microsoft Foundry (formerly Azure AI Foundry), the Foundry Toolkit for
+VS Code, and Python.
+
+Each numbered folder is a self-contained lab with its own README describing what
+was built, how it was tested, and how to run the code.
+
+## Labs
+
+| # | Lab | Focus |
+|---|---|---|
+| 01 | [Build AI Agents with Portal and VS Code](01-build-agent-portal-and-vscode/) | Creating a Foundry agent in the portal, grounding it with File Search + Code Interpreter, and driving it programmatically from a Python client in VS Code |
+
+## Skills demonstrated across this repo
+
+- Provisioning and configuring Microsoft Foundry projects and model deployments
+- Designing agent instructions and grounding agents in domain documents (RAG /
+  File Search)
+- Using built-in agent tools (Code Interpreter) for data analysis and chart
+  generation
+- Developing agents with the Foundry Toolkit VS Code extension
+- Building Python clients against the Azure AI Agents / Responses API
+  (`azure-ai-projects`, `azure-identity`)
+- Managing Azure resources responsibly (provisioning, testing, teardown)
+
+## Environment
+
+- Python 3.13
+- VS Code + Foundry Toolkit extension
+- Azure CLI (`az login`) for authentication — no API keys committed
