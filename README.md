@@ -13,6 +13,7 @@ was built, how it was tested, and how to run the code.
 |---|---|---|
 | 01 | [Build AI Agents with Portal and VS Code](01-build-agent-portal-and-vscode/) | Creating a Foundry agent in the portal, grounding it with File Search + Code Interpreter, and driving it programmatically from a Python client in VS Code |
 | 02 | [Build an Agent with Custom Tools](02-build-agent-with-custom-tools/) | Defining custom Python functions as agent tools, and handling multi-step function-calling conversations with the Responses API |
+| 03 | [Connect MCP Tools to Azure AI Agents](03-connect-mcp-tools-to-azure-ai-agents/) | Connecting agents to a remote MCP server (Microsoft Learn Docs) and building a custom local MCP server/client with inventory tools |
 
 ## Skills demonstrated across this repo
 
@@ -26,10 +27,12 @@ was built, how it was tested, and how to run the code.
   (`azure-ai-projects`, `azure-identity`)
 - Defining custom function tools with JSON-schema parameters and handling
   multi-step, agent-initiated function-calling loops
+- Connecting agents to remote and custom local MCP (Model Context Protocol)
+  servers, including the MCP tool-call approval flow
 - Managing Azure resources responsibly (provisioning, testing, teardown)
 
 ## Environment
 
-- Python 3.13
+- Python 3.13 (3.12 for lab 03, due to MCP dependency compatibility)
 - VS Code + Foundry Toolkit extension
 - Azure CLI (`az login`) for authentication — no API keys committed
