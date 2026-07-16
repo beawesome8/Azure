@@ -12,6 +12,7 @@ was built, how it was tested, and how to run the code.
 | # | Lab | Focus |
 |---|---|---|
 | 01 | [Build AI Agents with Portal and VS Code](01-build-agent-portal-and-vscode/) | Creating a Foundry agent in the portal, grounding it with File Search + Code Interpreter, and driving it programmatically from a Python client in VS Code |
+| 02 | [Build an Agent with Custom Tools](02-build-agent-with-custom-tools/) | Defining custom Python functions as agent tools, and handling multi-step function-calling conversations with the Responses API |
 
 ## Skills demonstrated across this repo
 
@@ -23,6 +24,8 @@ was built, how it was tested, and how to run the code.
 - Developing agents with the Foundry Toolkit VS Code extension
 - Building Python clients against the Azure AI Agents / Responses API
   (`azure-ai-projects`, `azure-identity`)
+- Defining custom function tools with JSON-schema parameters and handling
+  multi-step, agent-initiated function-calling loops
 - Managing Azure resources responsibly (provisioning, testing, teardown)
 
 ## Environment
