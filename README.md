@@ -15,6 +15,8 @@ was built, how it was tested, and how to run the code.
 | 02 | [Build an Agent with Custom Tools](02-build-agent-with-custom-tools/) | Defining custom Python functions as agent tools, and handling multi-step function-calling conversations with the Responses API |
 | 03 | [Connect MCP Tools to Azure AI Agents](03-connect-mcp-tools-to-azure-ai-agents/) | Connecting agents to a remote MCP server (Microsoft Learn Docs) and building a custom local MCP server/client with inventory tools |
 | 04 | [Integrate an AI Agent with Foundry IQ](04-integrate-agent-with-foundry-iq/) | Grounding a portal-built agent in a Foundry IQ knowledge base (Azure AI Search + Blob Storage), with a human-in-the-loop approval flow for knowledge base lookups |
+| 05a | [Deploy Agents to Teams and Copilot](05a-deploy-agents-to-teams-and-copilot/) | Publishing a portal-built agent to Microsoft Teams (Azure Bot Service) and Microsoft 365 Copilot, plus supporting scripts for Foundry IQ / Graph API concepts |
+| 05b | [Work IQ: Workplace Intelligence](05b-work-iq-workplace-intelligence/) | Grounding an agent in live M365 Copilot data (emails, meetings, Teams) via the Work IQ MCP server, with a function-call tool loop over the Responses API |
 
 ## Skills demonstrated across this repo
 
@@ -32,10 +34,15 @@ was built, how it was tested, and how to run the code.
   servers, including the MCP tool-call approval flow
 - Building Foundry IQ knowledge bases (Azure AI Search + Blob Storage) and
   grounding agents in them with human-in-the-loop approval for lookups
+- Publishing agents to Microsoft Teams and Microsoft 365 Copilot from the
+  Foundry portal, and understanding the resulting Azure Bot Service/app
+  manifest artifacts
+- Grounding agents in live Microsoft 365 data via the Work IQ MCP server, using
+  the same function-call tool loop pattern as custom/remote MCP tools
 - Managing Azure resources responsibly (provisioning, testing, teardown)
 
 ## Environment
 
-- Python 3.13 (3.12 for labs 03–04, due to dependency compatibility)
+- Python 3.13 (3.12 for labs 03–05, due to dependency compatibility)
 - VS Code + Foundry Toolkit extension
 - Azure CLI (`az login`) for authentication — no API keys committed
