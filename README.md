@@ -18,6 +18,7 @@ was built, how it was tested, and how to run the code.
 | 05a | [Deploy Agents to Teams and Copilot](05a-deploy-agents-to-teams-and-copilot/) | Publishing a portal-built agent to Microsoft Teams (Azure Bot Service) and Microsoft 365 Copilot, plus supporting scripts for Foundry IQ / Graph API concepts |
 | 05b | [Work IQ: Workplace Intelligence](05b-work-iq-workplace-intelligence/) | Grounding an agent in live M365 Copilot data (emails, meetings, Teams) via the Work IQ MCP server, with a function-call tool loop over the Responses API |
 | 06 | [Build a Workflow in Microsoft Foundry](06-build-workflow-ms-foundry/) | Building a multi-agent, multi-branch customer support triage workflow in the Foundry portal's workflow builder, and invoking it from Python as a streamed agent reference |
+| 07 | [Agent Framework SDK: Expense Claim Agent](07-agent-framework-sdk/) | Building an expense-claim agent with the higher-level Microsoft Agent Framework SDK (`agent_framework`, `@tool` decorator, `FoundryChatClient`) instead of the raw Responses API |
 
 ## Skills demonstrated across this repo
 
@@ -43,10 +44,13 @@ was built, how it was tested, and how to run the code.
 - Building multi-agent, multi-branch workflows in the Foundry portal's
   workflow builder (loops, conditionals, JSON Schema-constrained agent
   outputs) and invoking them from code as streamed agent references
+- Building agents with the higher-level Microsoft Agent Framework SDK
+  (`@tool` decorator, `FoundryChatClient`, `Agent.run()`) as an alternative to
+  the raw Responses API
 - Managing Azure resources responsibly (provisioning, testing, teardown)
 
 ## Environment
 
-- Python 3.13 (3.12 for labs 03–06, due to dependency compatibility)
+- Python 3.13 (3.12 for labs 03–07, due to dependency compatibility)
 - VS Code + Foundry Toolkit extension
 - Azure CLI (`az login`) for authentication — no API keys committed
